@@ -10,6 +10,7 @@ import RestaurantMenu from './components/RestaurantMenu';
 import UserContext from './utils/UserContext';
 import { Provider } from 'react-redux';
 import appStore from './utils/appStore';
+import Cart from './components/Cart';
 
 // chunking
 // code spitting
@@ -69,6 +70,10 @@ const appRouter = createBrowserRouter([
       {
         path: '/restaurants/:resId',    // Dynamic id
         element: <RestaurantMenu/>,
+      },
+      {
+        path: '/cart',    // Dynamic id
+        element: <Cart/>,
       }
     ],
     errorElement: <Error/>

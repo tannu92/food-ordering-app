@@ -5,7 +5,7 @@ const RestaurantCard = ({ resData }) => {
   const { cloudinaryImageId, name, cuisines, avgRating } = resData?.info;
 
   return (
-    <div className="restaurantCard w-[250px] m-4 p-2 border border-solid border-blue-50 shadow-md h-[280px] bg-gray-50 rounded-lg hover:bg-pink-50 hover:shadow-xl">
+    <div data-testid="resCard" className="restaurantCard w-[250px] m-4 p-2 border border-solid border-blue-50 shadow-md h-[280px] bg-gray-50 rounded-lg hover:bg-pink-50 hover:shadow-xl">
       <img
         className="res-logo h-[150px] w-[100%] rounded-lg"
         src={CDN_URL + cloudinaryImageId}

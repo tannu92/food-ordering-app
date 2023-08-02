@@ -49,6 +49,7 @@ const Body = () => {
         <div className="serach p-4">
           <input
             type="text"
+            data-testid="searchInput"
             className="search-box px-4 py-1  rounded-md border border-solid border-gray shadow-md"
             value={searchText}
             onChange={(e) => {
